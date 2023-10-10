@@ -1,0 +1,18 @@
+{
+  "hosting": {
+    "headers": [
+      { "source":"/service-worker.js", "headers": [{"key": "Cache-Control", "value": "no-cache"}] }
+    ],
+    "site": "clcgh-beta",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [ {
+      "source": "/app/**",
+      "destination": "/app/index.html"
+    }]
+  }
+}
